@@ -7,11 +7,24 @@ services:
 matrix:
   include:
     - go: 1.5
+      arch: amd64
     - go: 1.6
+      arch: amd64
     - go: 1.7
+      arch: amd64
     - go: 1.8
+      arch: amd64
     - go: 1.9
+      arch: amd64
     - go: tip
+      arch: amd64
+    - go: 1.13
+      arch: ppc64le
+    - go: 1.14
+      arch: ppc64le
+    - go: 1.15
+      arch: ppc64le
+      
   allow_failures:
     - go: tip
 
